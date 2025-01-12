@@ -1,0 +1,73 @@
+/* Contenedor con fondo transparente */
+.transparent-container {
+    background-color: rgba(0, 0, 0, 0); /* Fondo transparente */
+    padding: 1px;
+    border-radius: 1px;
+}
+
+/* Contenedor general de iconos */
+.social-icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Espacio entre las filas */
+}
+
+/* Fila de iconos */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos cambien de línea */
+    justify-content: center;
+    gap: 10px; /* Espacio entre los iconos */
+}
+
+/* Elementos individuales */
+.social-icons li {
+    text-align: center;
+}
+
+/* Estilo de las imágenes */
+.social-icons img {
+    width: 60px; /* Tamaño fijo de los iconos */
+    height: 60px;
+    object-fit: contain; /* Mantiene las proporciones */
+    border: none; /* Elimina cualquier borde */
+}
+
+/* Ajustes para pantallas grandes (PC) */
+@media (min-width: 769px) {
+    .social-icons {
+        flex-wrap: nowrap; /* Mantiene todos los iconos en una línea */
+        justify-content: space-between; /* Espacio uniforme entre iconos */
+    }
+
+    .social-icons li {
+        flex: 1; /* Espacio uniforme para cada icono */
+    }
+}
+
+/* Ajustes para dispositivos móviles (pantallas medianas y pequeñas) */
+@media (max-width: 768px) {
+    .social-icons {
+        flex-wrap: wrap; /* Permite que los iconos cambien de línea */
+    }
+
+    .social-icons li {
+        flex: 0 0 calc(25% - 10px); /* Cuatro iconos por fila */
+    }
+
+    .social-icons img {
+        width: 50px; /* Tamaño ajustado para pantallas medianas */
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icons img {
+        width: 40px; /* Tamaño más pequeño para pantallas pequeñas */
+        height: 40px;
+    }
+}
