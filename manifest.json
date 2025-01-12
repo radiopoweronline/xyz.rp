@@ -1,0 +1,37 @@
+{
+    "name": "RADIO POWER",
+    "short_name": "RADIO POWER",
+    "description": "RADIO POWER: Con el poder de los clásicos.",
+    "icons": [
+        {
+            "src": "/assets/192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/assets/512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "/assets/96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "/assets/144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        }
+    ],
+    "start_url": "/index.html",
+    "scope": "/",
+    "theme_color": "#002d87",
+    "background_color": "#002d87",
+    "orientation": "portrait",
+    "display": "standalone",
+    "display_override": ["standalone"],
+    "lang": "es",
+    "dir": "ltr",
+    "categories": ["music", "entertainment", "streaming"]
+}
